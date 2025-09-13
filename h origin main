@@ -1,0 +1,1714 @@
+[33mcommit 0d80e994f26b7c25fc03a45753ed2c93be430554[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31mupstream/main[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Admire <43035036+Admirepowered@users.noreply.github.com>
+Date:   Fri Sep 5 17:55:57 2025 +0800
+
+    fix stupid msys2 toolchian (#203)
+
+[33mcommit 299a5cf312dcd467eb55d4af8af0547089585c2b[m
+Author: NoOne91-cmd <proxy.xc.com@gmail.com>
+Date:   Sat Aug 30 10:08:08 2025 +0800
+
+    fix remove_kstorage (#196)
+    
+    * fix remove_kstorage
+    
+    * Update kstorage.c
+
+[33mcommit e4af910982ecb17d35b632c24ce303c02ccba02e[m
+Author: bmax <placeholder@outlook.com>
+Date:   Wed Jun 25 15:01:29 2025 +0800
+
+    fix taskext, todo: refactor taskext api
+
+[33mcommit 57d487090add7e25e98cfb8d569d999c14f30352[m[33m ([m[1;33mtag: [m[1;33m0.12.0[m[33m)[m
+Author: bmax121 <bmax12121@outlook.com>
+Date:   Mon Jun 9 16:14:33 2025 +0800
+
+    Update version
+
+[33mcommit be6df66372937d4aebb79cca6cc17cc2db8f343d[m
+Author: Admire <43035036+Admirepowered@users.noreply.github.com>
+Date:   Mon Jun 9 16:14:05 2025 +0800
+
+    1. fix hook: paging_init with pac 2. fix hook: modify pgtable with PTE_CONT 3. fix kptools: base_cand num error and workflow 4. fix some struct offset resolver
+    
+    
+    Signed-off-by: Admirepowered <admire1971@outlook.com>
+    Co-authored-by: NepXIN <gteamxin@gmail.com>
+
+[33mcommit 362c0b3f9598a1420a4263e484fb6414bf583896[m[33m ([m[1;33mtag: [m[1;33m0.11.3[m[33m)[m
+Author: bmax <placeholder@outlook.com>
+Date:   Mon Feb 17 18:59:54 2025 +0800
+
+    fix: kptools, kallsym_num_syms
+
+[33mcommit 871a87aa838232604d67cbee3422c9856c416307[m[33m ([m[1;33mtag: [m[1;33m0.11.3-dev[m[33m)[m
+Author: bmax <bmax12121@outlook.com>
+Date:   Wed Feb 12 09:04:24 2025 +0800
+
+    update workflow
+
+[33mcommit c259ee53b3fb39015bcbfc78314e1585daa6d4d1[m
+Author: bmax <bmax12121@outlook.com>
+Date:   Wed Feb 12 09:01:48 2025 +0800
+
+    update workflow
+
+[33mcommit 9b2b68371dd64ca911cdfb68d213587f254b2c34[m[33m ([m[1;33mtag: [m[1;33m0.11.2[m[33m)[m
+Author: bmax <bmax12121@outlook.com>
+Date:   Wed Feb 12 08:54:32 2025 +0800
+
+    11.2
+
+[33mcommit 91df9a771b3dad1ef44b4f8401cb461ee7899ac3[m[33m ([m[1;33mtag: [m[1;33m0.11.1-dev[m[33m, [m[1;33mtag: [m[1;33m0.11.0-dev[m[33m, [m[1;33mtag: [m[1;33m0.10.7[m[33m)[m
+Author: GarfieldHan <2652609017@qq.com>
+Date:   Wed May 1 20:15:19 2024 +0800
+
+    Optimize android safe mode, apply some optimizations, introduce dependabot and upgrade deps (#84)
+    
+    * userd: Optimize android safe mode
+    
+    1. Fix input_handle_event hook
+    2. Split safemode write operation
+    3. Add more point to trigger writting
+    
+    Signed-off-by: GarfieldHan <2652609017@qq.com>
+    
+    * kernel: Add a few bp hot path
+    
+    Signed-off-by: GarfieldHan <2652609017@qq.com>
+    
+    * userspace: Apply optimizations
+    
+    Signed-off-by: GarfieldHan <2652609017@qq.com>
+    
+    * workflows: Upgrade to ndk r26d
+    
+    Signed-off-by: GarfieldHan <2652609017@qq.com>
+    
+    * github: Introduce dependabot
+    
+    Signed-off-by: GarfieldHan <2652609017@qq.com>
+    
+    * Bump the action-dependencies group with 3 updates
+    
+    Bumps the action-dependencies group with 3 updates: [actions/checkout](https://github.com/actions/checkout), [actions/upload-artifact](https://github.com/actions/upload-artifact) and [ncipollo/release-action](https://github.com/ncipollo/release-action).
+    
+    Updates `actions/checkout` from 3 to 4
+    - [Release notes](https://github.com/actions/checkout/releases)
+    - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+    - [Commits](https://github.com/actions/checkout/compare/v3...v4)
+    
+    Updates `actions/upload-artifact` from 3 to 4
+    - [Release notes](https://github.com/actions/upload-artifact/releases)
+    - [Commits](https://github.com/actions/upload-artifact/compare/v3...v4)
+    
+    Updates `ncipollo/release-action` from 1.12.0 to 1.14.0
+    - [Release notes](https://github.com/ncipollo/release-action/releases)
+    - [Commits](https://github.com/ncipollo/release-action/compare/v1.12.0...v1.14.0)
+    
+    ---------
+    
+    Signed-off-by: GarfieldHan <2652609017@qq.com>
+    Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+[33mcommit 57f87f240c74a40030d3f90b2156e8478b52737c[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Wed May 1 09:11:03 2024 +0800
+
+    1. su command: compat compat-syscall for 32-bits.  2. fix: hook input_handle_event (#83)
+    
+    * su command: compat compat-syscall for 32-bits
+    
+    * fix: hook input_handle_event
+    
+    * maintain pt_regs offset
+    
+    ---------
+    
+    Co-authored-by: bmax <bmax@placeholder.com>
+
+[33mcommit edc86424aa1b5d40e84f46ca1c9fe29b90bb7367[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Apr 8 14:25:06 2024 +0800
+
+    data sync after reset superkey
+
+[33mcommit 9da444637851f87785695573fe3b6c9bb32c81c4[m[33m ([m[1;33mtag: [m[1;33m0.10.5[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Mar 26 13:04:45 2024 +0800
+
+    feat: hash superkey
+
+[33mcommit f5e6a0193e6158d30759bd62a408f79f7d0104a7[m
+Merge: a7df5f6 a3f8f4f
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Mar 26 09:46:54 2024 +0800
+
+    Merge branch 'dev' of https://github.com/bmax121/KernelPatch into dev
+
+[33mcommit a7df5f63ab4c05d908182b82c0964a716db1d91d[m
+Merge: 652c482 4ab1c3a
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Mar 26 09:46:50 2024 +0800
+
+    a
+
+[33mcommit a3f8f4ff212da2cab0a34e37170fb15d248ef98a[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Mon Mar 25 21:07:31 2024 +0800
+
+    a
+
+[33mcommit 652c482c8dda9976cb43ab2118b0c6001971dc4c[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Mar 25 19:49:43 2024 +0800
+
+    a
+
+[33mcommit 4ab1c3aa8fbb4e1490807822c70daa601b83bcad[m
+Author: SK <33929605+sekaiacg@users.noreply.github.com>
+Date:   Mon Mar 25 19:48:27 2024 +0800
+
+    kptools: Skip relocation when trying again (#76)
+    
+    Signed-off-by: sekaiacg <sekaiacg@gmail.com>
+
+[33mcommit e067529bf34585cbd0e7008112ea39a23fb20822[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Mar 25 19:46:11 2024 +0800
+
+    a
+
+[33mcommit 5d2f2a761be3034b230f85caf7f3c0c83454fbb8[m
+Author: 4qwerty7 <4qwerty7@163.com>
+Date:   Thu Mar 21 11:32:36 2024 +0800
+
+    Fix the logic for processing the "UNCOMPRESSED_IMG" header(fix #72) (#73)
+    
+    * fix incorrect uncompressed img header process logic
+    
+    * fix some error in previous commit
+    
+    * seal all uncomrpessed_img logic
+    
+    * clean code
+
+[33mcommit 5beb1d8b0d25d64be2cb1cd1d381980141606bb6[m[33m ([m[1;33mtag: [m[1;33m0.10.4[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Mar 17 23:14:05 2024 +0800
+
+    1. fix kallsym: find kallsyms_marker error, newest oneplus12 (not noly oneplus12) is ok now, 2. try to fix module install os error 22 or 5, I'm not sure
+
+[33mcommit ab774a72b5a8e3659010a3e02bf9128769a11a1a[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Mar 17 13:01:24 2024 +0800
+
+    x
+
+[33mcommit a5e10e7cf4ae47d1ef84a6b89e7ee35dc7ab60c7[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Mar 14 10:37:39 2024 +0800
+
+    a
+
+[33mcommit 3443b9aeb122febf910daace3b394c71d4937d2e[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Mar 14 10:34:51 2024 +0800
+
+    a
+
+[33mcommit 0d9a4a9bf224853a884f2ffc485d2d0601b0ac29[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Mar 10 09:16:34 2024 +0800
+
+    rm: should not exist file
+
+[33mcommit 95695e37d4cc13afe72c6bea9333f8a6c4e4dece[m[33m ([m[1;33mtag: [m[1;33m0.10.3[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Mar 8 16:28:35 2024 +0800
+
+    opt
+
+[33mcommit 6fe3bcb88ed29415e20fea3885e0422cb7516ac3[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Mar 8 16:02:01 2024 +0800
+
+    To ensure compatibility with Termux's su, we commented out some code that enhances robustness.
+
+[33mcommit bd1bb3252c87bdf05addb912201ef3b3c6f54d66[m[33m ([m[1;33mtag: [m[1;33m0.10.2[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Mar 7 17:52:37 2024 +0800
+
+    a
+
+[33mcommit f0f2084ca517352ba8c9e667e55589b5022bda61[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Mar 7 16:40:07 2024 +0800
+
+    v0.10.2
+
+[33mcommit 66ef7064f93a37619d6f5d4f9a05f64f6e12fd88[m
+Merge: 11dec50 5699dfd
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Mar 6 19:44:31 2024 +0800
+
+    Merge branch 'main' of https://github.com/bmax121/KernelPatch
+
+[33mcommit 11dec50fa13704f4f138a038c574139b460e379c[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Mar 6 19:44:07 2024 +0800
+
+    fix kptools: used uninitialized memory
+
+[33mcommit 5699dfd895e98a20061b1a6dee197b5377565525[m
+Author: affggh <46290091+affggh@users.noreply.github.com>
+Date:   Wed Mar 6 17:49:09 2024 +0800
+
+    kptools: Fix shift overflow warning on windows (#57)
+    
+    * kptools: Force use ull on all platforms
+    
+    * kptools: Use GENMASK_ULL macro define on windows platform
+
+[33mcommit f60aca4a7c12fe7726c67476a8c2a7650ec968a5[m
+Author: SK <33929605+sekaiacg@users.noreply.github.com>
+Date:   Wed Mar 6 16:14:50 2024 +0800
+
+    Fix config_flags and Optimize the output of config information in kpimg (#65)
+    
+    * patch: Fix config_flags
+    
+    Signed-off-by: sekaiacg <sekaiacg@gmail.com>
+    
+    * patch: Optimize the output of config information in kpimg
+    
+    Signed-off-by: sekaiacg <sekaiacg@gmail.com>
+    
+    ---------
+    
+    Signed-off-by: sekaiacg <sekaiacg@gmail.com>
+
+[33mcommit 9ff12c5fad4091bad2ecc984d94bbff011a33953[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Mar 6 16:10:52 2024 +0800
+
+    tools: log write file error
+
+[33mcommit 4e3a543904a5806d4e284fa4e23c0cab93d72b76[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Mar 5 17:55:08 2024 +0800
+
+    inline_hook_syscalln not stable, replace with fp_hook_syscalln, TODO fix
+
+[33mcommit 3afcecc319185b00359a2c96e0ef259790845b54[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Mar 5 17:33:53 2024 +0800
+
+    inline_hook_syscalln not stable, replace with fp_hook_syscalln
+
+[33mcommit 14e417e8b9c50c0654dd1fd6c1d98ba4a77e1328[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Mar 5 14:23:23 2024 +0800
+
+    fix: remove strndup
+
+[33mcommit 971ade901fe1943794d5e7970903052e76c53af7[m
+Merge: f49a24b df23c45
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Mar 5 14:00:32 2024 +0800
+
+    kpatch: mv -> cp
+
+[33mcommit df23c454d6fd14235cdf001774b855c90664f093[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Mar 5 13:59:00 2024 +0800
+
+    a
+
+[33mcommit 1c25d30f1328bcf0bddc64d9261490e269a69b01[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Mar 5 10:21:50 2024 +0800
+
+    a
+
+[33mcommit 9c8a96a08545dd5cd3b493b932b843ab261cb6b6[m
+Merge: 4c42f34 ebca512
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Mar 5 10:21:10 2024 +0800
+
+    Merge branch 'dev' of https://github.com/bmax121/KernelPatch into dev
+
+[33mcommit 4c42f34259402a32f72230f806ef0c530f007fec[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Mar 5 10:20:24 2024 +0800
+
+    a
+
+[33mcommit f49a24b8906d4cfceb3895c3b49f6cb7b915b19e[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Tue Mar 5 09:57:31 2024 +0800
+
+    0.10.1 (#64)
+    
+    1. Follow-up to 0.9.x, early support for embed extra-item (such as KPM, executable, shell, android rc file ...) into kernel image. These extra-items will trigger under certain events. (current only support KPM triggered under "pre-kernel-init" event)
+    2. Add another KPM control interface
+    3. Refactor the implementation of the 'su' command. This will fix some of the issues related to the 'su' command.
+    4. Add new SUPERCMD implementation to execute command with superkey, this replaced the original KPATCH_SHADOW_PATH
+    5. Temporary fix the feature of kpatch-extract from kernel (v0.10.0), leave it into the next version.
+    ---------
+    
+    Co-authored-by: bmax <bmax@placeholder.com>
+
+[33mcommit ebca5128fa973560d71980b59f96ba6bc573731c[m
+Merge: 7c1a250 be04c66
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Mar 5 08:38:59 2024 +0800
+
+    a
+
+[33mcommit 7c1a2508ca7a48c095a9029deef7738f6a78eefb[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Mar 3 09:58:52 2024 +0800
+
+    a
+
+[33mcommit f364e51e3fcc6d7e70ff36859aac85a2b22e5164[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Mar 3 09:57:05 2024 +0800
+
+    a
+
+[33mcommit 03f0413901430f5e7995e65ea2131603c5a94edd[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Mar 3 09:24:42 2024 +0800
+
+    a
+
+[33mcommit 3879d1447a806764036e56206989ce41be4df74c[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Mar 1 20:05:04 2024 +0800
+
+    a
+
+[33mcommit 35d5d910b968a2ba7068fbe632b0593f74fe07d4[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Mar 1 17:19:23 2024 +0800
+
+    a
+
+[33mcommit c84c89530ce6476d6d6bcdf81a0b9616661160ba[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Mar 1 14:27:25 2024 +0800
+
+    a
+
+[33mcommit 7f23aab709bd2963b1348d72ab4130d743887913[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Feb 29 16:49:41 2024 +0800
+
+    a
+
+[33mcommit e706c2be0017157007a1b87b08b58f3d58b98fb3[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Feb 29 13:46:10 2024 +0800
+
+    a
+
+[33mcommit 7b2caadcf817b4268cdd959744d372f5747fbaff[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Feb 29 13:43:49 2024 +0800
+
+    a
+
+[33mcommit 768889368dcf66026c11854d97f344ff34aa5e17[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Feb 28 22:50:54 2024 +0800
+
+    a
+
+[33mcommit 11bc49f9c202dae75eda194fcb375394a0da2164[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Feb 28 11:00:01 2024 +0800
+
+    a
+
+[33mcommit 4c41d0ca0eb68d126d68d6ca01096ca7ab559cea[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Feb 27 19:45:24 2024 +0800
+
+    a
+
+[33mcommit be04c66b2b6d751a2da3f015cb474d28364bbcff[m
+Author: SK <33929605+sekaiacg@users.noreply.github.com>
+Date:   Tue Feb 27 14:32:35 2024 +0800
+
+    kpuserd: Try to extract kpatch in before_first_stage and before_second_stage (#61)
+    
+    https://github.com/bmax121/KernelPatch/issues/58
+    
+    Signed-off-by: sekaiacg <sekaiacg@gmail.com>
+
+[33mcommit 8486a60fa07c723d7c9c3bc443cca157059a6f4c[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Feb 23 22:08:45 2024 +0800
+
+    apjni: add more log
+
+[33mcommit 49c1d58965cf8ba09c792b50e53df225a37c5afa[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Feb 23 14:22:33 2024 +0800
+
+    fix: skip load magisk policy
+
+[33mcommit 898433199ffcfc7166aa4f36a922fac7c105a203[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Feb 23 13:12:25 2024 +0800
+
+    workflow update
+
+[33mcommit 9431d79494e40a50e3ae29216d4659660d8dbdf0[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Feb 23 13:00:52 2024 +0800
+
+    workflow update
+
+[33mcommit e93a142a9d6c41d80106f2e520a1cc94876c5229[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Feb 23 11:33:57 2024 +0800
+
+    fix: print additional info
+
+[33mcommit add475959af4010a0e3953f57367add212235598[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Thu Feb 22 19:39:38 2024 +0800
+
+    version 0.10.0 (#56)
+    
+    1. Feature: update patch and unpatch supported (current version >= 0.9.0)
+    2. Feature: add KPM control interface
+    3. Feature: Embed extra-item (such as KPM, executable, shell ...) into kernel image early support. These extra-items will trigger execution at appropriate time. (current only support KPM triggered at "pre-kernel-init" event)
+    4. bug fix
+    
+    ---------
+    
+    Co-authored-by: bmax <bmax@placeholder.com>
+
+[33mcommit e73e5bf0b1b9687cc0bff6ef150cc06fb973e65d[m
+Merge: 211f038 d8b9d97
+Author: bmax121 <nullret@outlook.com>
+Date:   Thu Feb 22 19:38:42 2024 +0800
+
+    Merge branch 'main' into dev
+
+[33mcommit 211f03855b94593ef3cb992fc14e1f027463611f[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Feb 22 19:26:00 2024 +0800
+
+    version 0.10.0
+
+[33mcommit 69093911ac55f9ba7ef275072fe96836ab6f47b2[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Feb 22 18:55:06 2024 +0800
+
+    a
+
+[33mcommit e75606376b34d7682d50908d8f0d081d6dafa323[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Feb 22 17:09:49 2024 +0800
+
+    a
+
+[33mcommit 06b8580a8f6ec254e172eb8e9f1efaf1060dacee[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Feb 22 14:54:21 2024 +0800
+
+    a
+
+[33mcommit 9e83c90a94768573aef8f40cf46964b9561f4427[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Feb 22 10:49:51 2024 +0800
+
+    a
+
+[33mcommit a504d31740fdfba2ed1e73be0b58cf1217ab5124[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Feb 22 10:31:16 2024 +0800
+
+    a
+
+[33mcommit 3c624dc541c76fb4b5e1c3510d00aac5381d95c9[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Feb 21 21:40:45 2024 +0800
+
+    a
+
+[33mcommit 959a89687ce3ec669f6a801f3143f07c6bcbbe3e[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Feb 21 16:51:20 2024 +0800
+
+    a
+
+[33mcommit a00b6c593f2f2b767b70f32c3e71d78d703950f2[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Feb 21 14:30:21 2024 +0800
+
+    a
+
+[33mcommit e13fe6ed6812f1ee66eed39b8ea056e5c6d37818[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Feb 21 14:18:30 2024 +0800
+
+    a
+
+[33mcommit 145094ff034f4ae546de11af3c50df2aed395cce[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Feb 21 14:04:07 2024 +0800
+
+    a
+
+[33mcommit 04509cfd1e50f661a98d915faf9f4ae159f65bbd[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Feb 19 10:14:43 2024 +0800
+
+    a
+
+[33mcommit 0e5ddb9cc15ed601f5dc16c525bc3540da74a33e[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Feb 19 10:13:01 2024 +0800
+
+    x
+
+[33mcommit 45f32373e3efac6d82533aa57d355d52e65e411b[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Feb 18 22:52:35 2024 +0800
+
+    x
+
+[33mcommit cef1fa0deae2f1cf0679a04624d6256138627cbd[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Feb 16 22:19:47 2024 +0800
+
+    x
+
+[33mcommit 311dfd3523abba8e551f36c8043750b4fcd225dc[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Feb 16 22:14:18 2024 +0800
+
+    x
+
+[33mcommit cf984828577e1edaacce0e6c5c9a0ebabb95cfd8[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Feb 15 23:15:33 2024 +0800
+
+    tmp save
+
+[33mcommit 40fc30856c2cad04e7406451d7cda13016e16631[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Feb 7 10:10:56 2024 +0800
+
+    x
+
+[33mcommit e71a8d76ffaa95f8d74f55f10c2b82d817d257a3[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Feb 6 22:59:46 2024 +0800
+
+    x
+
+[33mcommit 4f6641aa33ae17818131bf8eed12d14a68072d9d[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Feb 6 17:44:05 2024 +0800
+
+    a
+
+[33mcommit b3ad1b6f3ee50e3bad64bb010ed2d6b40e21819f[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Feb 6 17:42:56 2024 +0800
+
+    a
+
+[33mcommit d8b9d97db1934bcb6038261bd59818a64f8359d2[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Feb 5 11:32:08 2024 +0800
+
+    tools fix header
+
+[33mcommit e63c3cd6ad4c4e485561574061c55e99476db506[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Feb 5 11:31:35 2024 +0800
+
+    tools fix linux header
+
+[33mcommit 122404f3effae6a3a057d3be7f9fecf8e85ae4da[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Feb 5 11:16:50 2024 +0800
+
+    a
+
+[33mcommit 39302e500df8109a7723d266d46e65046c4d4e4e[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Feb 2 15:35:09 2024 +0800
+
+    x
+
+[33mcommit 34ff5ed802b38f877905aeda03eb4d269e7b1ac3[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Feb 2 09:44:35 2024 +0800
+
+    add additional infomation
+
+[33mcommit 2456f7f29d26035637f472ad2f5410c9d5880615[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Feb 1 10:48:40 2024 +0800
+
+    a
+
+[33mcommit 9eaa799be2ee03a7674d9ec39f438f5f4955499a[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 31 16:04:32 2024 +0800
+
+    x
+
+[33mcommit 1280fad01a2e162fe892bc55c2869a9681500702[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 31 15:12:09 2024 +0800
+
+    x
+
+[33mcommit 3759207f21a67805fd3ab11bc5efad4f19ef72f4[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 31 11:28:48 2024 +0800
+
+    Revert "x"
+    
+    This reverts commit 8eaa89c3bca0e1260a1fb1d1083544b7ed2a387a.
+
+[33mcommit 8eaa89c3bca0e1260a1fb1d1083544b7ed2a387a[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 31 11:27:20 2024 +0800
+
+    x
+
+[33mcommit 19711b22a3dfbc3f7a75896aba8f50a3c18a86de[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 31 10:36:01 2024 +0800
+
+    x
+
+[33mcommit 3a27639487b075af6e12d089cf6c1c6c26fff02d[m
+Merge: b93a034 5e35ed2
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 31 10:25:28 2024 +0800
+
+    Merge branch 'main' into dev
+
+[33mcommit b93a034cbf992fd80b906f4433377a7c7f2f86da[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 31 10:24:47 2024 +0800
+
+    x
+
+[33mcommit 5e35ed23b4155c46b9dc292f8918b4cdfeaf9904[m
+Author: Admire <43035036+Admirepowered@users.noreply.github.com>
+Date:   Wed Jan 31 09:58:43 2024 +0800
+
+    Fix Generate version (#50)
+    
+    * Fix Generate version of windows
+
+[33mcommit 2ddcaaa10dfa2858aa0eaeb98192dffde80c84d2[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Jan 30 22:20:04 2024 +0800
+
+    a
+
+[33mcommit a38e2ec911d1ef2c722b5dab5afd463367a2a255[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Jan 30 10:49:59 2024 +0800
+
+    a
+
+[33mcommit 9588b5f14aa15ebc73329517489db04d8105ccb5[m
+Merge: f169409 d70d8cf
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Jan 30 09:45:08 2024 +0800
+
+    Merge branch 'main' into dev
+
+[33mcommit d70d8cf8dede262e8cb71230e535e256fe7d2eef[m
+Author: SK <33929605+sekaiacg@users.noreply.github.com>
+Date:   Mon Jan 29 21:40:33 2024 +0800
+
+    module: Fix ctl_args parameter in control_module (#48)
+    
+    Signed-off-by: sekaiacg <sekaiacg@gmail.com>
+
+[33mcommit 9b42689dc12a6d411261a0b7e1df79a7d156304a[m
+Author: Admire <43035036+Admirepowered@users.noreply.github.com>
+Date:   Mon Jan 29 21:32:28 2024 +0800
+
+    Update build.yml (#49)
+    
+    Fix windows kptools bootloop
+    修复windows工具在llvm下无法正常修补,从windows本地构建
+
+[33mcommit f1694095feaa00de7f672c25a89fc46dfc387d4f[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Jan 29 17:13:09 2024 +0800
+
+    fix: kpatch xxx -v
+
+[33mcommit 9d7e33ef89f21197c4192bc3e8bf23f756560f19[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Jan 29 15:56:33 2024 +0800
+
+    feat: support detach embeded kpm
+
+[33mcommit f653bfd7f570b39dc987a1cbd8c41da6e9a9737f[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Sun Jan 28 22:07:37 2024 +0800
+
+    Update issue templates
+
+[33mcommit 8a6acca325e5ece86c0be92bdf9920645c2c2086[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sat Jan 27 10:58:18 2024 +0800
+
+    fix ci
+
+[33mcommit 5c331d6ea7559a67a6de0851760923e24c3efab6[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sat Jan 27 10:52:06 2024 +0800
+
+    update ci
+
+[33mcommit 07b601f02d4365453ad55e9bd7bbdf7b1f973695[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sat Jan 27 10:33:40 2024 +0800
+
+    fix build
+
+[33mcommit 81ccb64a8ab7a8428415bc630d1df973a856ffdb[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sat Jan 27 10:28:31 2024 +0800
+
+    fix build
+
+[33mcommit e3faddf48699d2a4219e1ef574b7158fc093dba9[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sat Jan 27 10:25:29 2024 +0800
+
+    fix typo
+
+[33mcommit 47f299aeeddcfde20d2d5f13368e26d2792b9c3f[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Sat Jan 27 10:02:17 2024 +0800
+
+    Dev (#46)
+    
+    1. Embed KPM support, add KPM control interface
+    2. Re-patch kernel image support
+    3. Start supporting KALLSYMS_ALL=n, but still some issues
+    4. bug fix
+
+[33mcommit f89cc0ebdbe2c480c95b8976ee997e33f8846a9a[m[33m ([m[1;33mtag: [m[1;33m0.9.0[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 17 19:31:11 2024 +0800
+
+    fix: jni su to_uid
+
+[33mcommit 0cf11f4554fe462590eb11bca731bca6a7a39936[m[33m ([m[1;33mtag: [m[1;33m0.8.5[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 17 19:12:49 2024 +0800
+
+    feat: su support more option
+
+[33mcommit b08831c6a9ac5e0715fc26dc492fe2afed933109[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Sun Jan 14 08:18:00 2024 +0800
+
+    refix bti (#38)
+    
+    * refix bti
+    
+    ---------
+    
+    Co-authored-by: bmax <bmax@placeholder.com>
+
+[33mcommit e21b75db2b46bed870b51858f33a5ab278a3d5aa[m[33m ([m[1;33mtag: [m[1;33m0.8.4[m[33m)[m
+Author: affggh <46290091+affggh@users.noreply.github.com>
+Date:   Sun Jan 14 08:16:50 2024 +0800
+
+    kptools: Support compile kptools for windows target (#37)
+    
+    * kptools: Support compile for windows target
+    
+    * ci: Support build for windows mingw32
+
+[33mcommit ee09601bad025cb87fda1187c158700b1fe76b8f[m
+Author: SK <33929605+sekaiacg@users.noreply.github.com>
+Date:   Sun Jan 14 08:16:35 2024 +0800
+
+    kptools: Add targetOS option to patch target system (#36)
+    
+    default: Android
+    
+    Signed-off-by: sekaiacg <sekaiacg@gmail.com>
+
+[33mcommit 088be2fb71979233c412790e582c93b112683a9d[m
+Author: Forenche <61968330+Forenche@users.noreply.github.com>
+Date:   Sat Jan 13 16:24:45 2024 +0530
+
+    Readme: fixup Documentaion link (#32)
+    
+    Signed-off-by: Forenche <prahul2003@gmail.com>
+
+[33mcommit a9c6ee4d6cca18a4cc638b572e3a20859fad433f[m
+Merge: ec63ea8 ea86ee6
+Author: bmax121 <nullret@outlook.com>
+Date:   Thu Jan 11 21:56:02 2024 +0800
+
+    Merge pull request #30 from sekaiacg/main
+    
+    kptools: Fix calculation of kpimg length
+
+[33mcommit ea86ee6df16e8d9b70ab0352c962c5b8f2d8d6cb[m
+Author: sekaiacg <sekaiacg@gmail.com>
+Date:   Thu Jan 11 10:43:21 2024 +0800
+
+    kptools: Fix calculation of kpimg length
+    
+    Signed-off-by: sekaiacg <sekaiacg@gmail.com>
+
+[33mcommit ec63ea86e3c3ff4f856c05847ed08982ac4d96fc[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Jan 9 08:31:48 2024 +0800
+
+    add licencse in each file
+
+[33mcommit 00de9a8fe8f3bc8af7df1ba7d3c8ce8b2509aa6c[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Jan 9 08:30:09 2024 +0800
+
+    add licencse in each file
+
+[33mcommit 5a08d3d94d6623dc02c40391efd0ae6cb44da031[m[33m ([m[1;33mtag: [m[1;33m0.8.3[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Jan 4 09:41:10 2024 +0800
+
+    kptools, failed when CONFIG_KALLSYMS_ALL=n
+
+[33mcommit 123f32dacf632e7e568c77e8cb87efc5fab9174c[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Thu Jan 4 09:28:04 2024 +0800
+
+    Update issue templates
+
+[33mcommit 06067a68db6dd32df681a85a1e830dd5a737afba[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Thu Jan 4 09:22:16 2024 +0800
+
+    Update issue templates
+
+[33mcommit ad8fcf5c154aa67b77efd3abd7c566e3a7d5285c[m[33m ([m[1;33mtag: [m[1;33m0.8.2[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 3 23:05:18 2024 +0800
+
+    kptools: fix typo
+
+[33mcommit f9c728aecc319b47bba68d703d4fb1a0c0fe35fa[m[33m ([m[1;33mtag: [m[1;33m0.8.1[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 3 22:26:02 2024 +0800
+
+    kptools: add more suffixed_symbol
+
+[33mcommit 122ec8d0fd0d82e0cd2138477816ef2405295a23[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 3 22:17:01 2024 +0800
+
+    kpimg: preset some symbol instead of runtime lookup
+
+[33mcommit 239610b6be9d9e9d4f835f429bfcd0556c1baf1a[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Jan 3 22:15:40 2024 +0800
+
+    fix temporary fix hook bug caused by bti
+
+[33mcommit 5250ab2be87b23e5c9dc56a5214b3cdba53c7857[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Mon Jan 1 18:25:43 2024 +0800
+
+    Update issue templates
+
+[33mcommit 930145870707e3c247ebebc2a6d9ef10577d3c28[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Mon Jan 1 18:24:41 2024 +0800
+
+    Update issue templates
+
+[33mcommit bf0e3f47ba9e2be9b2df14538d1a0cbd032181d3[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Mon Jan 1 18:09:07 2024 +0800
+
+    Update issue templates
+    
+    patch failed template
+
+[33mcommit f0cd0706180f4c5565f001804697a604a490b7b2[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Dec 31 17:53:30 2023 +0800
+
+    readme: plan support CONFIG_KALLSYMS_ALL=n
+
+[33mcommit 977f395fcba492ad41a5c4260a98aa5f7c95cae3[m[33m ([m[1;33mtag: [m[1;33m0.7.2[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Dec 31 15:24:24 2023 +0800
+
+    fix: kpm user interface
+
+[33mcommit b0a990f7248bc81dbc4b9e99aeb33c32e006743e[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Dec 29 22:26:57 2023 +0800
+
+    remove error file
+
+[33mcommit 1801e0724a7ba0286b7ff213b77379846aeb0cd8[m[33m ([m[1;33mtag: [m[1;33m0.7.1[m[33m)[m
+Merge: d6f5a6b 2aa6da4
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Dec 29 22:13:35 2023 +0800
+
+    0.7.1
+
+[33mcommit 2aa6da44907e1a8cbcd5d79e5196f7754c3365ff[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Dec 29 22:10:50 2023 +0800
+
+    android: package config csv format. kpm: list fix
+
+[33mcommit d9c091a68aa922db875c761e502011aaca3a271d[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Dec 28 09:53:48 2023 +0800
+
+    kallsym: logs alert if no linux_banner find
+
+[33mcommit ae7708335319906a8980f91d165ecbc602bfda64[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Dec 27 20:29:07 2023 +0800
+
+    kallsym: correcte address of offset more robust. change all stderr to stdout
+
+[33mcommit ca323021454002148b4e97b63249e5a5b8f68998[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Dec 27 10:44:33 2023 +0800
+
+    kallsym: try fix relocation error
+
+[33mcommit 24aeb025263816f04d6044c112544eb1fc6cfc8e[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Dec 26 22:32:34 2023 +0800
+
+    kpatch: remove default SU allowed shell, if kernel invoked android_user init
+
+[33mcommit 5f81ee9459c3ff67fa46c9f7a83091329a74ec10[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Dec 26 21:03:47 2023 +0800
+
+    kpatch revert, change scontext before set uids
+
+[33mcommit 75856d13f5ca52d91f02b73c2b101774469ae8bf[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Dec 26 20:59:17 2023 +0800
+
+    fix kpatch su
+
+[33mcommit 6eba17c0e658af0dbad1318964439f2b4b0f8797[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Dec 25 22:05:02 2023 +0800
+
+    update jni
+
+[33mcommit 8112184abf0b603877380dff6ef502280b2731b7[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Dec 24 20:16:05 2023 +0800
+
+    temp
+
+[33mcommit 773db968997b3b4a7c28a745500d15764baae1b6[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sat Dec 23 21:24:26 2023 +0800
+
+    fix build
+
+[33mcommit 10f215ab30ed8d82fe1cfbac3719e9073d8b8379[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sat Dec 23 21:19:30 2023 +0800
+
+    invoke apd post-fs-data without scontext
+
+[33mcommit d6f5a6bac175b8c24366360ccab865ff3eedeeb4[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Dec 22 13:26:22 2023 +0800
+
+    fix su path trim
+
+[33mcommit 209d5f42f544da28b16e5b96573bc38e8c776b82[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Dec 22 13:20:38 2023 +0800
+
+    fix user_init su path
+
+[33mcommit 66001edb7a924e3d1b0ec0d94024a767e79ef6a0[m
+Merge: 3348e11 748a7d1
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Dec 22 11:14:46 2023 +0800
+
+    Merge branch 'main' of https://github.com/bmax121/KernelPatch
+
+[33mcommit 3348e11ef29992346489d184ab1e8fd0e247f8c7[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Dec 22 11:13:03 2023 +0800
+
+    fix, some path error
+
+[33mcommit 748a7d1feb4256bee6c4f1bd195e381ee5862524[m
+Merge: 151cad0 199ed40
+Author: bmax121 <nullret@outlook.com>
+Date:   Thu Dec 21 22:55:01 2023 +0800
+
+    Merge pull request #5 from bmax121/dev
+    
+    0.7.0 for APatch
+
+[33mcommit 199ed40a7517fd2111285190ea13824edecd0f77[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Dec 21 22:41:53 2023 +0800
+
+    tmp
+
+[33mcommit c22fe08a90b22041398cd9a34d466655935697dc[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Dec 21 22:16:54 2023 +0800
+
+    dev 0.7.0
+
+[33mcommit 151cad0a8510c646d443dc99e99234ca68e45168[m[33m ([m[1;33mtag: [m[1;33m0.7.0[m[33m, [m[1;33mtag: [m[1;33m0.6.2[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Dec 20 10:04:31 2023 +0800
+
+    fix: build error
+
+[33mcommit 540325037081fefb7c34e7fc0d47cd91e0cad55e[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Dec 20 09:49:22 2023 +0800
+
+    fix: typo scdef.h header macro
+
+[33mcommit 9b1e52d3a5ed91353ac5ad9211b797f7bd976a09[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Dec 20 09:33:55 2023 +0800
+
+    fix: typo su to_uid
+
+[33mcommit 95dc3c90811bb6e337b0f3ee7deec3f95031228d[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Dec 19 22:25:48 2023 +0800
+
+    kpimg: fix build error
+
+[33mcommit c24484f514cff2d63909a96128655f1be7c47f6b[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Dec 19 22:20:40 2023 +0800
+
+    kpatch: refactor cli
+
+[33mcommit 7871eff72217589e1dad00adf67344035a0043dc[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Dec 18 22:35:19 2023 +0800
+
+    kpatch cmd
+
+[33mcommit fac770eecc937a6a91f3cb3536af6bebed7631b3[m[33m ([m[1;33mtag: [m[1;33m0.6.1[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Dec 17 21:36:31 2023 +0800
+
+    sucompat: su profile struct
+
+[33mcommit 09e27082a2a7ad8b48b2dfa6299551cf6cce30cc[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Dec 15 20:22:50 2023 +0800
+
+    ...
+
+[33mcommit 9b2cb0bcaf6731fbb23c21cef258ba4c0d899f8e[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Dec 15 19:47:07 2023 +0800
+
+    v0.6.0
+
+[33mcommit e7f8f551e8f51ababdb6b65a8a3760c619f8ee84[m[33m ([m[1;33mtag: [m[1;33m0.6.0[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Nov 23 07:52:20 2023 +0800
+
+    patch: add more boot log
+
+[33mcommit 6ebbab2c39b85e93804586202b25971c0a2e0a07[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Nov 22 21:46:17 2023 +0800
+
+    kptools strlcpy -> strncpy
+
+[33mcommit 9c6d7e3bf58b65d6523c038be7d1ab15fce74a1a[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Nov 22 21:45:10 2023 +0800
+
+    build: kptools define ANDROID
+
+[33mcommit c44f7e2a84901ddbf15fcb2e98119fb739b2b6f0[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Nov 22 21:09:18 2023 +0800
+
+    fix: config path compile error
+
+[33mcommit eaa2a41408c13850dfcd2461f25c4720823677fd[m[33m ([m[1;33mtag: [m[1;33m0.5.0[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Nov 22 20:50:44 2023 +0800
+
+    v0.5.0: kpm support, and su support, and some fix ...
+
+[33mcommit 3b0bb5213b4c3fa9e0a2004480927611e35faf1a[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Oct 11 10:12:10 2023 +0800
+
+    fix: hdr
+
+[33mcommit 53b69ef204bcaa2f72165bd2643daf5cce532204[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Oct 11 10:07:59 2023 +0800
+
+    fix: hdr
+
+[33mcommit 2d293636e71a03c80709ab7b559234a887548741[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Oct 11 10:02:39 2023 +0800
+
+    fix: hdr
+
+[33mcommit e80f7cb2e55b41932e9e8434a06b987633e0f1e8[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Oct 11 09:53:50 2023 +0800
+
+    change user lib source file name
+
+[33mcommit c3f370eee0ee910abb7784864c08e0e31879e4f0[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Oct 11 09:46:51 2023 +0800
+
+    change user lib source file name
+
+[33mcommit 1784d14160f460765b22505ba6f5d9c044e18152[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Oct 10 19:30:54 2023 +0800
+
+    fix: kpuser make hdr
+
+[33mcommit 1c412dc2c4f0c8f51963a21f7669c5fb8986f797[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Oct 10 19:28:17 2023 +0800
+
+    release kpuser source
+
+[33mcommit 1d160ac826944002929dbc88dd162b0b798d1a29[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Oct 10 18:50:47 2023 +0800
+
+    fix build.yml
+
+[33mcommit 43ef371ddc2f8e6d712c8d20d74f50e0bf3cfa5f[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Oct 10 18:48:19 2023 +0800
+
+    typo
+
+[33mcommit 01cc97bdb677ab82e46a3f6eb95fcc3752d6da89[m[33m ([m[1;33mtag: [m[1;33m0.4.0[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Oct 10 18:43:08 2023 +0800
+
+    gplv2
+
+[33mcommit adb903fb4cb2ef2b2859c1046d6446990d25e13b[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Oct 10 18:42:53 2023 +0800
+
+    v0.4.0
+
+[33mcommit 76d4dd19ad9d545dedd194991201a4b04ed7a546[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Oct 4 20:03:08 2023 +0800
+
+    typo
+
+[33mcommit 1b0870bfb732a72b59c597ea5b4ed9ab6c66455e[m[33m ([m[1;33mtag: [m[1;33m0.3.0[m[33m)[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Oct 3 22:41:46 2023 +0800
+
+    update github action
+
+[33mcommit 8887a04f7a70a121660556341b9643890fcdf8ea[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Oct 2 15:30:52 2023 +0800
+
+    v0.3.0
+
+[33mcommit 46a8632b84109082284e553624e1a06549e7c93a[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sat Sep 30 08:51:29 2023 +0800
+
+    feat: android su compat done
+
+[33mcommit 30879f508d8430070c138c24345cc083f71dd547[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Sep 28 19:48:57 2023 +0800
+
+    feat: su
+
+[33mcommit 9e75818e18c4a3b5270b22efb3567b7119bb4a73[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Sep 27 22:31:35 2023 +0800
+
+    feat: su tmp2
+
+[33mcommit f1794bce62e615b04f931ba4f0b89581125dd1ec[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Sep 27 13:30:20 2023 +0800
+
+    feat: su 0
+
+[33mcommit 5b4885db39e5dbfe72934584c9b6835d14912b3c[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Sep 25 22:17:55 2023 +0800
+
+    feat: tmp su compat
+
+[33mcommit 76ba9f8d6d4305c589dd9ee439fe40b2e169dd4d[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Sep 24 21:42:19 2023 +0800
+
+    feat: tmp su dev
+
+[33mcommit 0bc32e07957872759e03b95aefff324eed830a2b[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Sep 20 21:25:48 2023 +0800
+
+    fix: hook error caused by prev commit
+
+[33mcommit b06a545c49724a0c4ed116ef42609c82d6d7e36b[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Sep 20 19:09:57 2023 +0800
+
+    ver: 0.2.1
+
+[33mcommit 84ddf45d05e83ccf7aeb3e1d49fc94b90b100736[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Sep 20 19:08:56 2023 +0800
+
+    fix: copy_process crash sometime
+
+[33mcommit 385f80a9202643c78fd5c9674ec24d18426a2f94[m
+Author: bmax <bmax@placeholder.com>
+Date:   Wed Sep 20 19:07:32 2023 +0800
+
+    fix: hook align 8
+
+[33mcommit 2df331ab8e738c9c569a793559b853dfd90d0995[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Sep 19 19:09:13 2023 +0800
+
+    fix: data sync
+
+[33mcommit f102e7f10ecbff93e20eba08525dfe0ac9d38048[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Sep 19 09:22:15 2023 +0800
+
+    v0.2.0
+
+[33mcommit 68f9cd26efbb94f8f4561721ab065ae917cf3f27[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Sep 10 15:46:04 2023 +0800
+
+    fix: image header with UNCOMPRESSED_IMG
+
+[33mcommit e5db0b058eecf627191b9b0dec62afb0d3c81ba3[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Sep 10 12:42:31 2023 +0800
+
+    fix: knl img with UNCOMPRESSED_IMG header
+
+[33mcommit 94fdd7b841f84c8c3f34e29f4203262bd7316de4[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Sep 4 22:00:10 2023 +0800
+
+    feat: 5.15 compat
+
+[33mcommit 17a6507ffe7fe346ee79add7e5c507a0d580eaf3[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Aug 28 17:55:33 2023 +0800
+
+    fix: _printk instead of printk on 5.15+
+
+[33mcommit 5e925c3ef2f6e941c34820b94e608e64fa88408d[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Aug 27 07:26:18 2023 +0800
+
+    docs: update build
+
+[33mcommit ef00f2f0384ceb50359ef9977ae8091bfc8bf77b[m
+Author: bmax <bmax@placeholder.com>
+Date:   Tue Aug 22 09:21:55 2023 +0800
+
+    docs: update
+
+[33mcommit 93928a636d27cf09d806397749a3d507be9cd03f[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Aug 21 21:10:22 2023 +0800
+
+    perf: skip some kfunc
+
+[33mcommit e54882215330e4d9c12714593213fc2927756cec[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Aug 21 18:53:53 2023 +0800
+
+    tools version 1.0.0
+
+[33mcommit 9677893f91142518df4cd162c90b67182912abc4[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Aug 21 18:53:26 2023 +0800
+
+    docs: update guide
+
+[33mcommit ea84fd5d3c13af723a68267511c1283a3c288f0d[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Aug 21 16:17:22 2023 +0800
+
+    update
+
+[33mcommit 0dec81005ff1270ad9ce47de3197301d73584abc[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Aug 20 09:30:19 2023 +0800
+
+    feat: some for su command compat
+
+[33mcommit d4dfdf4de6bb53517caa1a2ec1e8a0311987ccca[m
+Author: bmax <bmax@placeholder.com>
+Date:   Fri Aug 18 16:45:04 2023 +0800
+
+    feat: supercall arg auth
+
+[33mcommit 552a42345251483497ecbeeda78ad1692e0b7e5d[m
+Author: bmax <bmax@placeholder.com>
+Date:   Thu Aug 17 19:59:25 2023 +0800
+
+    ...
+
+[33mcommit d2e68d99d22368c21aa0884e2d5ec9c8ab560e8a[m
+Author: bmax <bmax@placeholder.com>
+Date:   Mon Jul 31 17:13:42 2023 +0800
+
+    refactor: hello return magic hex
+
+[33mcommit 02e94452f314fde702282348496fe550a3f01281[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Jul 30 18:19:14 2023 +0800
+
+    update
+
+[33mcommit 82ddc62c37f318617d9e7eb331c443d50f9150b0[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Jul 30 18:15:05 2023 +0800
+
+    update
+
+[33mcommit 05e7eb0e2849e90c6e7cdfbda97e1bfd02f2c3f8[m
+Author: bmax <bmax@placeholder.com>
+Date:   Sun Jul 30 17:08:27 2023 +0800
+
+    fix: find relo error
+
+[33mcommit feb00cb6a5c7165a0febf9a42d6a4f9611f07aa9[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Thu Jul 27 07:32:06 2023 +0800
+
+    fix: typo
+
+[33mcommit d2732bde206070059f998f2af057b577a41e53c9[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Wed Jul 26 21:26:37 2023 +0800
+
+    Update build.yml
+
+[33mcommit 7464832f55755d6607411fe2b0b3f79456cb12df[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Wed Jul 26 21:20:10 2023 +0800
+
+    fix: %llx format
+
+[33mcommit 0292fbf6cc83da33320af73f5c448336cd0903ea[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Wed Jul 26 21:14:38 2023 +0800
+
+    fix: miss header
+
+[33mcommit 9b50fedf23979d06366cfbdcadf93b520fe830a7[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Wed Jul 26 21:03:27 2023 +0800
+
+    Update build.yml
+
+[33mcommit e04f809a9b3b4f96347440306a19fca72b87fc1a[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Wed Jul 26 20:59:11 2023 +0800
+
+    Update build.yml
+
+[33mcommit 93c03396d749dc47b7f37e39d5bf29499d91075a[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Wed Jul 26 20:57:22 2023 +0800
+
+    Update build.yml
+
+[33mcommit c5c715b44e1b535d6089e69ef32d5015beb29f9a[m
+Author: bmax121 <>
+Date:   Wed Jul 26 14:31:13 2023 +0800
+
+    refactor: make hdr
+
+[33mcommit 568bd5a94503d715d598f75a16030f8d46523606[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Tue Jul 25 19:52:35 2023 +0800
+
+    Update build.yml
+
+[33mcommit d24d6fa506bddf244f58d8230c8242f5501eb935[m
+Author: bmax121 <>
+Date:   Fri Jul 21 17:48:47 2023 +0800
+
+    fix: su
+
+[33mcommit bff2643bdb7b0dd72c580f5c2d2305eef6d93c84[m
+Author: bmax121 <>
+Date:   Fri Jul 21 13:52:05 2023 +0800
+
+    docs: compile
+
+[33mcommit 9ea0ebc4fdc0ec590dd86ae105cb5e8792be0890[m
+Author: bmax121 <>
+Date:   Fri Jul 21 13:51:48 2023 +0800
+
+    update: action
+
+[33mcommit ae8af97bd3dbb9820de2edd2d3e96010eca9f9f9[m
+Author: bmax121 <>
+Date:   Fri Jul 21 13:51:05 2023 +0800
+
+    fix: typo asm label
+
+[33mcommit b2a032440f82662b120cdbf61c634a8fb284f674[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Fri Jul 21 13:30:08 2023 +0800
+
+    Update build.yml
+
+[33mcommit dea052b98f0f5f4f0090546bd441af71bc670ea0[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Fri Jul 21 11:49:29 2023 +0800
+
+    Update build.yml
+
+[33mcommit 12e70dca4467848b763a14ce85611bf150e7af3d[m
+Merge: 978b7cf d45fbb1
+Author: bmax121 <nullret@outlook.com>
+Date:   Thu Jul 20 14:15:36 2023 +0800
+
+    Merge pull request #1 from bmax121/dev
+    
+    merge dev
+
+[33mcommit d45fbb1655e59dbb1faeba7e3c2a03fe77830995[m
+Author: bmax121 <>
+Date:   Thu Jul 20 14:06:53 2023 +0800
+
+    fix: fsgid, skey auth
+
+[33mcommit 324951096ca8b1e0820a26cea2a5586ec2b89ca9[m
+Author: bmax121 <>
+Date:   Thu Jul 20 11:56:53 2023 +0800
+
+    fix: fsgid, fsuid, CFI on syscall_table
+
+[33mcommit d8db0240bb57ef921cdc2f91a88d339a8f566718[m
+Author: bmax121 <>
+Date:   Wed Jul 19 16:25:10 2023 +0800
+
+    fix: thread_info_in_task
+
+[33mcommit 3632713df8dbf47604b6842ee78087d216310c04[m
+Author: bmax121 <>
+Date:   Mon Jul 17 10:28:41 2023 +0800
+
+    feat: task_ext
+
+[33mcommit c5607a7e2acf7189c76884e881eb9943892ec399[m
+Author: bmax121 <>
+Date:   Sat Jul 15 17:14:35 2023 +0800
+
+    fix: current, struct offset
+
+[33mcommit 18776c8e66b7656e89f1a525ef92ed9940406edf[m
+Author: bmax121 <>
+Date:   Thu Jul 13 14:51:44 2023 +0800
+
+    fix: rewrite setup done
+
+[33mcommit 165dd8ea256dda1749a347e98299e8130568dfb0[m
+Author: bmax121 <>
+Date:   Wed Jul 12 14:18:15 2023 +0800
+
+    aarch64-none-elf 11 done, working on 12
+
+[33mcommit 3cff5267096b15b8149b87a011e0b4417dcadc31[m
+Author: bmax121 <>
+Date:   Tue Jul 11 19:26:03 2023 +0800
+
+    fix: doing
+
+[33mcommit 92e8ad689ec36ca1af598c567d0c558fe33565a7[m
+Author: bmax121 <>
+Date:   Tue Jul 11 17:35:11 2023 +0800
+
+    fix: rewrite setup map
+
+[33mcommit c924a205161bc99c943215eda0142dd5c28dec1a[m
+Author: bmax121 <>
+Date:   Sun Jul 9 18:49:46 2023 +0800
+
+    rewriting setup with asm ...
+
+[33mcommit 978b7cf58d92a2fe7290b36940b515492075a1b9[m
+Merge: fe5a162 8e09409
+Author: bmax121 <>
+Date:   Fri Jul 7 13:31:33 2023 +0800
+
+    Merge branch 'main' of https://github.com/bmax121/KernelPatch
+
+[33mcommit fe5a162a3325dd66dd3bac1b261f96bdfad863e1[m
+Author: bmax121 <>
+Date:   Fri Jul 7 13:30:33 2023 +0800
+
+    docs: build
+
+[33mcommit 356c50867e162f48746a1d24ce2389c5dcb46cc7[m
+Author: bmax121 <>
+Date:   Fri Jul 7 13:27:37 2023 +0800
+
+    📃 docs: compile
+
+[33mcommit 8e09409f33b6941848bedf03866e46a057807525[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Fri Jul 7 13:16:37 2023 +0800
+
+    Update build.yml
+
+[33mcommit fac046145b8e4ff1b1c82fe80690916bcf5c71fc[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Fri Jul 7 13:02:35 2023 +0800
+
+    Update build.yml
+
+[33mcommit dbcc7c93aaf18e59a0c7e31bfbf51679feb79565[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Fri Jul 7 13:01:14 2023 +0800
+
+    Update build.yml
+
+[33mcommit a39bccbc688fb5817182565efbddbd458b000978[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Fri Jul 7 12:34:01 2023 +0800
+
+    Update build.yml
+
+[33mcommit 0cac474044f6708bd4cb83fb5d8e7d33aa512df4[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Fri Jul 7 11:59:33 2023 +0800
+
+    Update build.yml
+
+[33mcommit 8c35d3a20c483884332b9f2ce29b2e4feeae7e50[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Fri Jul 7 11:55:22 2023 +0800
+
+    Update build.yml
+
+[33mcommit 857f7c513b7e4fef7c289527f203bdc6342de3d8[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Fri Jul 7 11:50:09 2023 +0800
+
+    Update build.yml
+
+[33mcommit 71c57c4435bdf273e2117f8f31ea5e91793a99d4[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Fri Jul 7 11:45:46 2023 +0800
+
+    Update build.yml
+
+[33mcommit be7603fdee344b10113d1b066a5faefc279c9325[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Fri Jul 7 11:42:16 2023 +0800
+
+    Update build.yml
+
+[33mcommit d09f2d9cab7ca315e97c7876b005bce3e54492da[m
+Author: bmax121 <>
+Date:   Fri Jul 7 11:36:33 2023 +0800
+
+    1
+
+[33mcommit 91184523481790160b189b95cd568896bd4e3d43[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Fri Jul 7 10:27:26 2023 +0800
+
+    Create build.yml
+
+[33mcommit 44110aea837cf500764e997f5b31d54ad9bfb5c0[m
+Author: bmax121 <>
+Date:   Fri Jul 7 09:57:11 2023 +0800
+
+    📃 docs: support
+
+[33mcommit 5e50ceea9d138d6a160e831f0c778c9099ec17ae[m
+Author: bmax121 <>
+Date:   Fri Jul 7 09:54:30 2023 +0800
+
+    📃 docs: kpuser
+
+[33mcommit 31c68bf57dea801c9cd2e15231b9502b3b3785d3[m
+Author: bmax121 <>
+Date:   Thu Jul 6 14:37:06 2023 +0800
+
+    🐞 fix: grant_su
+
+[33mcommit f38f0bcc91df632e22e37868134be1f863796c82[m
+Author: bmax121 <>
+Date:   Thu Jul 6 14:26:56 2023 +0800
+
+    📃 docs: Link AKP
+
+[33mcommit b14a420ce0ea3cf942da15f7e78bbc8a56bd1474[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Wed Jul 5 21:49:28 2023 +0800
+
+    Create LICENSE
+
+[33mcommit 7b023dfa369d2625658b97c211fd68e4d9ad32e2[m
+Author: bmax121 <nullret@outlook.com>
+Date:   Wed Jul 5 21:41:43 2023 +0800
+
+    first commit

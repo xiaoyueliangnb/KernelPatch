@@ -1,30 +1,45 @@
-ifndef TARGET_COMPILE
-    $(error TARGET_COMPILE not set)
-endif
+# ifndef TARGET_COMPILE
+#     $(error TARGET_COMPILE not set)
+# endif
 
 ifndef KP_DIR
     KP_DIR = ../..
 endif
 
 
-CC = $(TARGET_COMPILE)gcc
-LD = $(TARGET_COMPILE)ld
+CC = $(TARGET_COMPILE)aarch64-linux-android31-clang
+LD = $(TARGET_COMPILE)ld.lld
+AS = $(TARGET_COMPILE)llvm-as
+OBJCOPY = $(TARGET_COMPILE)llvm-objcopy
+STRIP := $(TARGET_COMPILE)llvm-strip
 
 INCLUDE_DIRS := . include patch/include linux/include linux/arch/arm64/include linux/tools/arch/arm64/include
 
 INCLUDE_FLAGS := $(foreach dir,$(INCLUDE_DIRS),-I$(KP_DIR)/kernel/$(dir))
 
+CFLAGS = -I$(AP_INCLUDE_PATH) $(INCLUDE_FLAGS) -mllvm -irobf-indbr -mllvm -irobf-icall -mllvm -irobf-indgv -mllvm -irobf-cff -mllvm -irobf-cse -Wall -Ofast -fno-PIC -fno-asynchronous-unwind-tables -fno-stack-protector -fno-unwind-tables -fno-semantic-interposition -U_FORTIFY_SOURCE -fno-common -fvisibility=hidden
+
+LDFLAGS  += -s
+
 objs := hello.o
 
 all: hello.kpm
 
+# 链接
 hello.kpm: ${objs}
-	${CC} -r -o $@ $^
+	${CC}  $(LDFLAGS)  -r -o $@ $^
+	${STRIP} -g --strip-unneeded --strip-debug --remove-section=.comment --remove-section=.note.GNU-stack $@
 
+# 编译
 %.o: %.c
-	${CC} $(CFLAGS) $(INCLUDE_FLAGS) -Thello.lds -c -O2 -o $@ $<
+	${CC} $(CFLAGS) $(INCLUDE_FLAGS)  -Thello.lds -c -O2 -o $@ $<
+
 
 .PHONY: clean
+ifeq ($(OS), Windows_NT)
 clean:
-	rm -rf *.kpm
-	find . -name "*.o" | xargs rm -f
+	del /Q *.o *.kpm
+else
+clean:
+	rm -rf *.o *.kpm
+endif

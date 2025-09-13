@@ -1,0 +1,21 @@
+[
+  {
+    "arguments": [
+      "/home/xiaokozi/gcc/arm-gnu-toolchain-12.2.rel1-x86_64-aarch64-none-elf/bin/aarch64-none-elf-gcc",
+      "-I../../kernel/.",
+      "-I../../kernel/include",
+      "-I../../kernel/patch/include",
+      "-I../../kernel/linux/include",
+      "-I../../kernel/linux/arch/arm64/include",
+      "-I../../kernel/linux/tools/arch/arm64/include",
+      "-c",
+      "-O2",
+      "-o",
+      "connect.o",
+      "connect.c"
+    ],
+    "directory": "/home/xiaokozi/Kernel/KernelPatch/kpms/hook-connect",
+    "file": "/home/xiaokozi/Kernel/KernelPatch/kpms/hook-connect/connect.c",
+    "output": "/home/xiaokozi/Kernel/KernelPatch/kpms/hook-connect/connect.o"
+  }
+]
